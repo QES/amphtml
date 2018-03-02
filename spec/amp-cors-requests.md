@@ -380,6 +380,8 @@ Access-Control-Expose-Headers: AMP-Access-Control-Allow-Source-Origin
 AMP-Access-Control-Allow-Source-Origin: https://example.com
 ```
 
+**NOTE:** The Access-Control-Allow-Origin header needs to be modified to be in line with the "request" `Origin` header if it exists.  The `__amp_source_origin` is used to validate the request is valid and from your (the publishers) origin.
+
 ## Testing CORS in AMP
 
 When you are testing your AMP pages, make sure to include tests from the cached versions of your AMP pages.
